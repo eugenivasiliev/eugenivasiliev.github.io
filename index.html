@@ -1,8 +1,188 @@
 <!DOCTYPE html>
 <html>
 <head>
-Hello World
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="gh-buttons.css"/>
+    <script type="text/javascript" src="script.js"></script>
+    <title>Hello World</title>
 </head>
-<body>
+<body bgcolor="black" style="text-align: center;">
+    <!--INTRO-->
+    <div class="introLayout">
+        <div>
+            <h1 style="text-align: left;">Eugeni Vasiliev</h1>
+            <img src="MyFace.jpeg" class="shadowed" style="width: 350px; border-radius: 175px;" />
+        </div>
+
+        <div class="socialsLayout">
+            <a href="https://www.linkedin.com/in/eugeni-vasiliev-vovk/" target="_blank" class="lightshadowed" style="width: 100px; height: 100px; border-radius: 10px; margin: 20px;">
+                <img src="LinkedinLogo.png" width="100" />
+            </a>
+            <a href="https://github.com/eugenivasiliev/" target="_blank" class="lightshadowed" style="background: white; width: 100px; height: 100px; border-radius: 18px; margin: 20px; ">
+                <img src="GithubLogo.png" width="100" />
+            </a>
+        </div>
+
+        <div style="align-content: center;">
+            <h3>My CV</h3>
+            <a href="CV_EugeniVasiliev.pdf" target="_blank">
+                <img class="lightshadowed" src="CVCover.png" height="300" style="border-radius: 10px;"/>
+            </a>
+        </div>
+    </div>
+
+    <!--LOGOS-->
+    <div class="logoLayout">
+        <div class="logo">
+            <img src="ENTILogo.png" style="height: 50px" />
+            <div><img src="DownArrow.png" height="30"/></div>
+            <p>3rd year student at ENTI University</p>
+            <ul style="text-align: left;">
+                <li>C++ & C#</li>
+                <li>Unity & UE5</li>
+                <li>Git & Agile</li>
+            </ul>
+        </div>
+        <div class="logo">
+            <img src="DLLogo.jpg" style="height: 50px;" />
+            <div><img src="DownArrow.png" height="30" /></div>
+            <p>QA Intern at Digital Legends</p>
+            <ul style="text-align: left;">
+                <li>QA & Documentation</li>
+                <li>Jira & Agile</li>
+                <li>Teamwork at a Studio scale</li>
+            </ul>
+        </div>
+        <div class="logo">
+            <img src="CodelearnLogo.png" style="height: 50px;" />
+            <div><img src="DownArrow.png" height="30" /></div>
+            <p>Programming teacher at CodeLearn</p>
+            <ul style="text-align: left;">
+                <li>Teaching programming</li>
+                <li>Working with children</li>
+                <li>Edutainment</li>
+            </ul>
+        </div>
+    </div>
+
+    <!--TABS-->
+    <div class="buttonGrid">
+        <div onclick="openSection('Projects')" id="ProjectsButton" class="sectionButton" style="border-bottom: 5px solid purple;">
+            <p style="font-weight: bold">My Hands</p>
+        </div>
+        <div onclick="openSection('Education')" id="EducationButton" class="sectionButton">
+            <p>My Brains</p>
+        </div>
+        <div onclick="openSection('Essays')" id="EssaysButton" class="sectionButton">
+            <p>My Voice</p>
+        </div>
+        <div onclick="openSection('Libraries')" id="LibrariesButton" class="sectionButton">
+            <p>My Freedom</p>
+        </div>
+    </div>
+
+    <!--PROJECTS-->
+    <div id="Projects" style="height: 1000px; overflow: clip; transition: height 1s">
+        <h2>Videogame projects</h2>
+        <p>A collection of my projects and work.</p>
+
+        <div class="gridlayout">
+            <div>
+                <h3>Call of Duty</h3>
+                <a href="https://youtu.be/DGibdlrwYMg?si=Uai3ekAIUkJayExr" target="_blank">
+                    <video class="lightshadowed" autoplay muted loop>
+                        <source src="CoDS03Trailer.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </a>
+                <p>Working in the QA department, helping to test the latest features in Call of Duty.</p>
+            </div>
+            <div>
+                <h3>Cosmic Ranch (WIP)</h3>
+                <a href="https://jamjar-games.itch.io/cosmic-ranch" target="_blank">
+                    <video class="lightshadowed" autoplay muted loop>
+                        <source src="CosmicRanchTrailer.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </a>
+                <p>Our current project at ENTI, a Third-Person Tower Defense inspired by Thronefall with an environment based in a farm in space.</p>
+            </div>
+            <div>
+                <h3>Party Goobers</h3>
+                <a href="https://party-puppers.itch.io/party-goobers" target="_blank">
+                    <video class="lightshadowed" autoplay muted loop>
+                        <source src="PartyGoobersTrailer.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </a>
+                <p>A multiplayer party fighting game, where you use different items to beat other Blorbos!</p>
+            </div>
+            <div>
+                <h3>Shadows Unveiled</h3>
+                <a href="https://drive.google.com" target="_blank">
+                    <video class="lightshadowed" autoplay muted loop>
+                        <source src="PartyGoobersTrailer.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </a>
+                <p>A 2D platformer based on changing elements to use different movement abilities.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--MY EDUCATION-->
+    <div id="Education" style="height: 0px; overflow: clip; transition: height 1s">
+        <h2>My Education</h2>
+        <p>My formal and informal learning through the years.</p>
+
+        <div class="educationGrid">
+            <img src="ENTIMagentaLogo.png" />
+            <p>Studying third year at ENTI.</p>
+        </div>
+    </div>
+
+    <!--LEARNING MATERIAL AND ESSAYS-->
+    <div id="Essays" style="height: 0px; overflow: clip; transition: height 1s">
+        <h2>My essays</h2>
+        <p>A collection of essays and papers I've written that express my style.</p>
+
+        <div class="gridlayout">
+            <div>
+                <h3>Cool Maths</h3>
+                <a href="CoolMaths.pdf" target="_blank">
+                    <img src="CoolMathsCover.png" class="expandingImage lightshadowed" />
+                </a>
+                <p>A collection of problems and my solutions for high-level mathematical olympiads.</p>
+            </div>
+
+            <div>
+                <h3>Introductory Math</h3>
+                <a href="IntroductoryMath.pdf" target="_blank">
+                    <img src="IntroductoryMathCover.png" class="expandingImage lightshadowed" />
+                </a>
+                <p>My introductory paper to some simpler topics, written in an approachable and engaging manner.</p>
+            </div>
+            <div>
+                <h3>Les Limitacions De Les Simulacions (CAT)</h3>
+                <a href="https://drive.google.com/file/d/14Up4ryF4yhUAq9e5RpgwkljxbxT6gBBO/view" target="_blank">
+                    <img src="VacaVol8Cover.png" class="expandingImage lightshadowed" />
+                </a>
+                <p>Posted in a magazine written by students and for students, this article breaks down some limitations in videogame physics, and what we can learn from them.</p>
+            </div>
+            <div>
+                <h3>Rejugar hasta romper (ESP)</h3>
+                <a href="RejugarHastaRomper.pdf" target="_blank">
+                    <img src="RejugarHastaRomperCover.png" class="expandingImage lightshadowed" />
+                </a>
+                <p>An essay presenting a taxonomy of difficulties in videogames, through the lens of <i>dynamic difficulty</i> and replayability.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--LIBRARIES AND STUFF-->
+    <div id="Libraries" style="height: 0px; overflow: clip; transition: height 1s">
+        <h2>Libraries and minimal dependencies</h2>
+
+    </div>
 </body>
 </html>
