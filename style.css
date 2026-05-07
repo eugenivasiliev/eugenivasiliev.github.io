@@ -29,6 +29,15 @@ h1, h2, h3, p, ul {
     padding-top: 75px;
 }
 
+.cv {
+    height: 300px;
+    transition: height 0.5s;
+}
+
+.cv:hover {
+    height: 350px;
+}
+
 .gridlayout {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -51,20 +60,20 @@ h1, h2, h3, p, ul {
 }
 
 .logo {
-    height: 80px;
+    max-height: 80px;
     overflow: clip;
-    transition: height 0.5s;
+    transition: max-height 1s;
 }
 
 .logo:hover {
-    height: 220px;
-    transition: height 0.5s;
+    max-height: 500px;
+    transition: max-height 1s;
 }
 
 .buttonGrid {
     align-content: center;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
     padding-left: 50px;
     padding-right: 50px;
@@ -76,7 +85,7 @@ h1, h2, h3, p, ul {
 .educationGrid {
     align-content: center;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto 1fr;
     margin-top: 10%;
     margin-left: 15%;
     margin-right: 15%;
@@ -92,21 +101,21 @@ h1, h2, h3, p, ul {
 }
 
 video {
-    height: 270px;
+    width: 65%;
     border-radius: 50px;
-    transition: height 0.5s;
+    transition: width 0.5s;
 }
 
 video:hover {
-    height: 350px;
+    width: 75%;
 }
 
 .expandingImage {
-    height: 270px;
+    width: 65%;
     border-radius: 50px;
-    transition: width 0.5s, height 0.5s;
+    transition: width 0.5s;
 }
 
 .expandingImage:hover {
-    height: 350px;
+    width: 75%;
 }

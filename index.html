@@ -3,8 +3,9 @@
 <head>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="gh-buttons.css"/>
+    <link rel="icon" href="MyFace.jpeg" type="image/x-icon"/>
     <script type="text/javascript" src="script.js"></script>
-    <title>Hello World</title>
+    <title>My Portfolio</title>
 </head>
 <body bgcolor="black" style="text-align: center;">
     <!--INTRO-->
@@ -26,7 +27,7 @@
         <div style="align-content: center;">
             <h3>My CV</h3>
             <a href="CV_EugeniVasiliev.pdf" target="_blank">
-                <img class="lightshadowed" src="CVCover.png" height="300" style="border-radius: 10px;"/>
+                <img class="cv lightshadowed" src="CVCover.png" style="border-radius: 10px;"/>
             </a>
         </div>
     </div>
@@ -76,13 +77,10 @@
         <div onclick="openSection('Essays')" id="EssaysButton" class="sectionButton">
             <p>My Voice</p>
         </div>
-        <div onclick="openSection('Libraries')" id="LibrariesButton" class="sectionButton">
-            <p>My Freedom</p>
-        </div>
     </div>
 
     <!--PROJECTS-->
-    <div id="Projects" style="height: 1000px; overflow: clip; transition: height 1s">
+    <div id="Projects" style="max-height: 5000px; overflow: clip; transition: max-height 0.5s">
         <h2>Videogame projects</h2>
         <p>A collection of my projects and work.</p>
 
@@ -119,11 +117,8 @@
             </div>
             <div>
                 <h3>Shadows Unveiled</h3>
-                <a href="https://drive.google.com" target="_blank">
-                    <video class="lightshadowed" autoplay muted loop>
-                        <source src="PartyGoobersTrailer.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+                <a href="https://github.com/eugenivasiliev/Project-1-Shadows-Unveiled" target="_blank">
+                    <img src="ShadowsUnveiledCover.png" class="expandingImage lightshadowed" />
                 </a>
                 <p>A 2D platformer based on changing elements to use different movement abilities.</p>
             </div>
@@ -131,18 +126,58 @@
     </div>
 
     <!--MY EDUCATION-->
-    <div id="Education" style="height: 0px; overflow: clip; transition: height 1s">
+    <div id="Education" style="max-height: 0px; overflow: clip; transition: max-height 0.5s">
         <h2>My Education</h2>
         <p>My formal and informal learning through the years.</p>
 
         <div class="educationGrid">
-            <img src="ENTIMagentaLogo.png" />
-            <p>Studying third year at ENTI.</p>
+            <div>
+                <img src="ENTIMagentaLogo.png" width="150" />
+            </div>
+            <div style="margin-left: 100px;">
+                <h3>Design and Development of Videogames and Applied Games</h3>
+                <p style="font-size:small;"><i>2024-Present</i></p>
+                <p>Studying my third year at ENTI, working on mid-scale projects at industry standard.</p>
+                <ul style="text-align: left;">
+                    <li>C++ & C#</li>
+                    <li>Unity & UE5</li>
+                    <li>Git & Agile</li>
+                </ul>
+            </div>
+        </div>
+        <div class="educationGrid">
+            <div>
+                <img src="IBLogo.png" width="150" />
+            </div>
+            <div style="margin-left: 100px;">
+                <h3>International Baccalaureate | Math & Sciences</h3>
+                <p style="font-size:small;"><i>2022-2024</i></p>
+                <p>Studied at one of the most prestigious and demanding programmes, with a focus on Mathematics and Science</p>
+                <ul style="text-align: left;">
+                    <li>Mathematics High Level</li>
+                    <li>Physics High Level</li>
+                </ul>
+            </div>
+        </div>
+        <div class="educationGrid">
+            <div>
+                <img src="LevelUpLogo.png" width="150" />
+            </div>
+            <div style="margin-left: 100px;">
+                <h3>Level Design</h3>
+                <p style="font-size:small;"><i>2021</i></p>
+                <p>Completed a 300h Bootcamp on Level Design alongside university-level students.</p>
+                <ul style="text-align: left;">
+                    <li>Level Design</li>
+                    <li>Unreal Engine</li>
+                    <li>Game Design</li>
+                </ul>
+            </div>
         </div>
     </div>
 
     <!--LEARNING MATERIAL AND ESSAYS-->
-    <div id="Essays" style="height: 0px; overflow: clip; transition: height 1s">
+    <div id="Essays" style="max-height: 0px; overflow: clip; transition: max-height 0.5s">
         <h2>My essays</h2>
         <p>A collection of essays and papers I've written that express my style.</p>
 
@@ -177,12 +212,6 @@
                 <p>An essay presenting a taxonomy of difficulties in videogames, through the lens of <i>dynamic difficulty</i> and replayability.</p>
             </div>
         </div>
-    </div>
-
-    <!--LIBRARIES AND STUFF-->
-    <div id="Libraries" style="height: 0px; overflow: clip; transition: height 1s">
-        <h2>Libraries and minimal dependencies</h2>
-
     </div>
 </body>
 </html>
