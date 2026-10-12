@@ -1,5 +1,13 @@
-h1, h2, h3, p, ul {
+body {
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+a {
     color: white;
 }
 
@@ -14,7 +22,7 @@ h1, h2, h3, p, ul {
 .introLayout {
     align-content: center;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 50% 5% 25% 5% 7%;
     text-align: left;
     margin-left: 15%;
     margin-right: 15%;
@@ -25,26 +33,57 @@ h1, h2, h3, p, ul {
 .socialsLayout {
     align-content: center;
     display: grid;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto 50px auto;
     padding-top: 75px;
 }
 
 .cv {
-    height: 300px;
-    transition: height 0.5s;
+    width: 90%;
+    transition: width 0.5s;
 }
 
 .cv:hover {
-    height: 350px;
+    width: 100%;
+}
+
+.tagcontainer {
+    display: flex;
+    margin-left: 5%;
+    margin-top: 15px;
+}
+
+.tag {
+    padding: 3px 10px 3px 10px;
+    border-radius: 5px;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: bold;
+    font-size: 9pt;
+    background: purple;
+    color: white;
 }
 
 .gridlayout {
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: center;
+    padding: 0 50px 50px 50px;
+}
+
+.gridcell {
+    background: rgba(255, 255, 255, .3);
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: red;
+    padding: 0 25px 25px 25px;
+}
+
+.gridlayout p {
     padding-left: 50px;
     padding-right: 50px;
-    padding-bottom: 50px;
 }
 
 .logoLayout {
@@ -101,21 +140,21 @@ h1, h2, h3, p, ul {
 }
 
 video {
-    width: 65%;
+    width: 90%;
     border-radius: 50px;
     transition: width 0.5s;
 }
 
 video:hover {
-    width: 75%;
+    width: 100%;
 }
 
 .expandingImage {
-    width: 65%;
+    width: 90%;
     border-radius: 50px;
     transition: width 0.5s;
 }
 
 .expandingImage:hover {
-    width: 75%;
+    width: 100%;
 }
