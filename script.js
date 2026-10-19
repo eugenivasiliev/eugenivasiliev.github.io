@@ -1,20 +1,26 @@
 
+var sections = ["Projects", "Education", "Essays"];
+var buttons = ["ProjectsButton", "EducationButton", "EssaysButton"];
+
 function openSection(id) {
-    var projects = document.getElementById("Projects");
-    var projectsBtn = document.getElementById("ProjectsButton");
-    projects.style.maxHeight = (id === "Projects") ? "5000px" : "0px";
-    projectsBtn.style.borderBottom = (id === "Projects") ? "5px solid purple" : "0px";
-    projectsBtn.firstElementChild.style.fontWeight = (id === "Projects") ? "bold" : "normal";
+    for(let i = 0; i < 3; i++) {
+	var section = document.getElementById(sections[i]);
+	section.style.visibility = "hidden";
+	section.style.height = "0px";
+	section.style.transition = "max-height 0s";
+	section.style.maxHeight = "0px";
+	var button = document.getElementById(buttons[i]);
+	button.style.borderBottom = "0px";
+	button.style.fontWeight = "normal";
+    }
 
-    var education = document.getElementById("Education");
-    var educationBtn = document.getElementById("EducationButton"); 
-    education.style.maxHeight = (id === "Education") ? "5000px" : "0px";
-    educationBtn.style.borderBottom = (id === "Education") ? "5px solid purple" : "0px";
-    educationBtn.firstElementChild.style.fontWeight = (id === "Education") ? "bold" : "normal";
-
-    var essays = document.getElementById("Essays");
-    var essaysBtn = document.getElementById("EssaysButton");
-    essays.style.maxHeight = (id === "Essays") ? "5000px" : "0px";
-    essaysBtn.style.borderBottom = (id === "Essays") ? "5px solid purple" : "0px";
-    essaysBtn.firstElementChild.style.fontWeight = (id === "Essays") ? "bold" : "normal";
+    var section = document.getElementById(sections[id]);
+    section.style.visibility = "visible";
+    section.style.height = "100%";
+    section.style.transition = "max-height 1s";
+    section.style.maxHeight = "5000px";
+    section.parentNode.insertBefore(section, section.parentNode.firstChild);
+    var button = document.getElementById(buttons[id]);
+    button.style.borderBottom = "5px solid purple";
+    button.style.fontWeight = "bold";
 }

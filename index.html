@@ -77,16 +77,18 @@
 
     <!--TABS-->
     <div class="buttonGrid">
-        <div onclick="openSection('Projects')" id="ProjectsButton" class="sectionButton" style="border-bottom: 5px solid purple;">
-            <p style="font-weight: bold">My Hands</p>
+        <div onclick="openSection('0')" id="ProjectsButton" class="sectionButton" style="border-bottom: 5px solid purple;">
+            <p>My Hands</p>
         </div>
-        <div onclick="openSection('Education')" id="EducationButton" class="sectionButton">
+        <div onclick="openSection('1')" id="EducationButton" class="sectionButton">
             <p>My Brains</p>
         </div>
-        <div onclick="openSection('Essays')" id="EssaysButton" class="sectionButton">
+        <div onclick="openSection('2')" id="EssaysButton" class="sectionButton">
             <p>My Voice</p>
         </div>
     </div>
+
+    <div>
 
     <!--PROJECTS-->
     <div id="Projects" style="max-height: 5000px; overflow: clip; transition: max-height 0.5s">
@@ -94,10 +96,10 @@
         <p>A collection of my projects and work.</p>
 
         <div class="gridlayout">
-            <div style="padding: 0 7.5% 50px 7.5%;">
+            <div class="gridcell">
                 <h3>Call of Duty</h3>
                 <a href="https://youtu.be/DGibdlrwYMg?si=Uai3ekAIUkJayExr" target="_blank">
-                    <video class="lightshadowed" autoplay muted loop>
+                    <video class="expandingImage lightshadowed" autoplay muted loop>
                         <source src="CoDS03Trailer.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -110,10 +112,10 @@
                 <p>Working in the QA department, helping to test the latest features in Call of Duty.</p>
 	    </div>
 
-            <div style="padding: 0 7.5% 50px 7.5%;">
+            <div class="gridcell">
                 <h3>Cosmic Ranch</h3>
                 <a href="https://jamjar-games.itch.io/cosmic-ranch" target="_blank">
-                    <video class="lightshadowed" autoplay muted loop>
+                    <video class="expandingImage lightshadowed" autoplay muted loop>
                         <source src="CosmicRanchTrailer.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -127,10 +129,10 @@
                 <p>A Third-Person Tower Defense inspired by Thronefall with an environment based in a farm in space.</p>
             </div>
 
-            <div style="padding: 0 7.5% 50px 7.5%;">
+            <div class="gridcell">
                 <h3>Party Goobers</h3>
                 <a href="https://party-puppers.itch.io/party-goobers" target="_blank">
-                    <video class="lightshadowed" autoplay muted loop>
+                    <video class="expandingImage lightshadowed" autoplay muted loop>
                         <source src="PartyGoobersTrailer.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -142,7 +144,7 @@
                 <p>A multiplayer party fighting game, where you use different items to beat other Blorbos!</p>
             </div>
 
-            <div style="padding: 0 7.5% 50px 7.5%;">
+            <div class="gridcell">
                 <h3>Shadows Unveiled</h3>
                 <a href="https://github.com/eugenivasiliev/Project-1-Shadows-Unveiled" target="_blank">
                     <img src="ShadowsUnveiledCover.png" class="expandingImage lightshadowed" />
@@ -160,35 +162,55 @@
 	<p>A collection of some highlights in my coding projects.</p>
 
 	<div class="gridlayout">
-		<div style="padding: 0 7.5% 50px 7.5%;">
+		<div class="gridcell">
 			<h3>Custom Unity asset importers</h3>
 			<a href="https://github.com/MonkeexX/Paws-Blades">
 				<img src="PawsNBlades_Importers.png" class="expandingImage lightshadowed"/>
 			</a>
+			<div class="tagcontainer">
+			    <div class="tag">Tools</div>
+			    <div class="tag">Engine Development</div>
+			    <div class="tag">Low Level</div>
+			</div>
 			<p>A set of custom importers for a Dialogue system, Spells, Elemental system, and NPCs; all integrated in the Unity Custom Importers, and adapting contextually to the Folder, or using a pop-up to ask the user.</p>
 		</div>
 
-		<div style="padding: 0 7.5% 50px 7.5%;">
+		<div class="gridcell">
 			<h3>Custom Unity Tiles</h3>
 			<a href="https://github.com/gerarddoblas/ProjectesII_05_24-25">
 				<img src="PartyGoobers_Tiles.png" class="expandingImage lightshadowed"/>
 			</a>
+			<div class="tagcontainer">
+			    <div class="tag">Tools</div>
+			    <div class="tag">Engine Development</div>
+			    <div class="tag">Low Level</div>
+			</div>
 			<p>A set of custom Tiles for the Unity Tilemaps, that allow for additional interactions such as bouncing, destruction, and particle generation; together with the Inspector UI for its easy modification.</p>
 		</div>
 
-		<div style="padding: 0 7.5% 50px 7.5%;">
+		<div class="gridcell">
 			<h3>Custom Quaternion library</h3>
 			<a href="https://github.com/eugenivasiliev/QuaternionLibrary">
 				<img src="QuaternionLibrary.png" class="expandingImage lightshadowed"/>
 			</a>
+			<div class="tagcontainer">
+			    <div class="tag">Mathematics</div>
+			    <div class="tag">Engine Development</div>
+			    <div class="tag">Low Level</div>
+			</div>
 			<p>A custom math library written in C# that implements Quaternions for a demo with a mechanical arm and its joints.</p>
 		</div>
 
-		<div style="padding: 0 7.5% 50px 7.5%;">
+		<div class="gridcell">
 			<h3>Android Studio App</h3>
 			<a href="https://github.com/SergiNaranjo/DiabloAppCompanion">
 				<img src="DiabloAppCompanion.png" class="expandingImage lightshadowed"/>
 			</a>
+			<div class="tagcontainer">
+			    <div class="tag">Android Studio</div>
+			    <div class="tag">Firebase</div>
+			    <div class="tag">API Integration</div>
+			</div>
 			<p>Developed an Android app through Android Studio with Kotlin, connecting it to a Firebase system and using login and other online features.</p>
 		</div>
 	</div>
@@ -202,7 +224,7 @@
 
         <div class="educationGrid">
             <div>
-                <img src="ENTIMagentaLogo.png" width="150" />
+                <img src="ENTIMagentaLogo.png" width="100%" />
             </div>
             <div style="margin-left: 100px;">
                 <h3>Design and Development of Videogames and Applied Games</h3>
@@ -218,7 +240,7 @@
 
         <div class="educationGrid">
             <div>
-                <img src="IBLogo.png" width="150" />
+                <img src="IBLogo.png" width="100%" />
             </div>
             <div style="margin-left: 100px;">
                 <h3>International Baccalaureate | Math & Sciences</h3>
@@ -233,7 +255,7 @@
 
         <div class="educationGrid">
             <div>
-                <img src="LevelUpLogo.png" width="150" />
+                <img src="LevelUpLogo.png" width="100%" />
             </div>
             <div style="margin-left: 100px;">
                 <h3>Level Design</h3>
@@ -250,11 +272,56 @@
 
     <!--LEARNING MATERIAL AND ESSAYS-->
     <div id="Essays" style="max-height: 0px; overflow: clip; transition: max-height 0.5s">
-        <h2>My essays</h2>
+        
+	<h2>My interests</h2>
+	<p>The interests I've focused on and represent me.</p>
+
+	<div class="gridlayout">
+	    <div class="gridcell">
+		<h3>Debate team lead</h3>
+		<a>
+		    <img src="DebateTeam.jpg" class="expandingImage lightshadowed"/>
+		</a>
+		<p>Lead an association focused on university debates, going to competitions and covering many different thought-provoking topics.</p>
+	    </div>
+
+	    <div class="gridcell">
+		<h3>Strategy tabletop games</h3>
+		<img src="Chess.png" class="expandingImage lightshadowed"/>
+		<p>Keeping myself on my toes with strategy games, such as Chess, Go, and Root.</p>
+	    </div>
+
+	    <div class="gridcell">
+		<h3>Reading</h3>
+		<img src="LevelUpBook.jpg" class="expandingImage lightshadowed"/>
+		<p>Trying to maintain a strong reading habit. Currently reading through The Heart of Darkness. Personal highlights include the classic Level Up!: The Guide to Great Video Game Design, and The Multiplayer Classroom.</p>
+	    </div>
+
+	    <div class="gridcell">
+		<h3>Teaching</h3>
+		<img src="MathClass.jpg" class="expandingImage lightshadowed"/>
+		<p>Helping out others with topics of my expertise with ad-hoc classes, and some particular teaching.</p>
+	    </div>
+
+	    <div class="gridcell">
+		<h3>Language learning (PL)</h3>
+		<img src="FlagPoland.webp" class="expandingImage lightshadowed"/>
+		<p>Trying to expand my knowledge with new languages. Currently working through the basics of Polish.</p>
+	    </div>
+
+	    <div class="gridcell">
+		<h3>Homelabbing</h3>
+		<img src="HomeLab.webp" class="expandingImage lightshadowed"/>
+		<p>Very slowly moving to hosting a home server with remote access.</p>
+	    </div>
+
+	</div>
+
+	<h2>My essays</h2>
         <p>A collection of essays and papers I've written that express my style.</p>
 
         <div class="gridlayout">
-            <div style="padding: 0 7.5% 50px 7.5%;">
+            <div class="gridcell">
                 <h3>Cool Maths</h3>
                 <a href="CoolMaths.pdf" target="_blank">
                     <img src="CoolMathsCover.png" class="expandingImage lightshadowed" />
@@ -262,7 +329,7 @@
                 <p>A collection of problems and my solutions for high-level mathematical olympiads.</p>
             </div>
 
-            <div style="padding: 0 7.5% 50px 7.5%;">
+            <div class="gridcell">
                 <h3>Introductory Math</h3>
                 <a href="IntroductoryMath.pdf" target="_blank">
                     <img src="IntroductoryMathCover.png" class="expandingImage lightshadowed" />
@@ -270,7 +337,7 @@
                 <p>My introductory paper to some simpler topics, written in an approachable and engaging manner.</p>
             </div>
 
-            <div style="padding: 0 7.5% 50px 7.5%;">
+            <div class="gridcell">
                 <h3>Les Limitacions De Les Simulacions (CAT)</h3>
                 <a href="https://drive.google.com/file/d/14Up4ryF4yhUAq9e5RpgwkljxbxT6gBBO/view" target="_blank">
                     <img src="VacaVol8Cover.png" class="expandingImage lightshadowed" />
@@ -278,7 +345,7 @@
                 <p>Posted in a magazine written by students and for students, this article breaks down some limitations in videogame physics, and what we can learn from them.</p>
             </div>
 
-            <div style="padding: 0 7.5% 50px 7.5%;">
+            <div class="gridcell">
                 <h3>Rejugar hasta romper (ESP)</h3>
                 <a href="RejugarHastaRomper.pdf" target="_blank">
                     <img src="RejugarHastaRomperCover.png" class="expandingImage lightshadowed" />
@@ -286,6 +353,9 @@
                 <p>An essay presenting a taxonomy of difficulties in videogames, through the lens of <i>dynamic difficulty</i> and replayability.</p>
             </div>
         </div>
+
+    </div>
+
     </div>
 </body>
 </html>
